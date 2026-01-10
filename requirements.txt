@@ -1,0 +1,17 @@
+# Core Dependencies
+streamlit>=1.28.0
+transformers>=4.35.0
+torch>=2.0.0
+sentencepiece>=0.1.99
+
+# RAG and Embeddings
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# Document Processing
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# Additional Dependencies
+protobuf>=3.20.0
+accelerate>=0.20.0
