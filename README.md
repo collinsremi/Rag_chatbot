@@ -1,18 +1,18 @@
-# 📚 AI Assistant with RAG (Retrieval-Augmented Generation)
+# AI Assistant with RAG (Retrieval-Augmented Generation)
 
 An intelligent question-answering system powered by Google's FLAN-T5 language model and RAG technology. This application allows you to ask questions about your documents and get accurate, context-aware answers based on your own content.
 
-## 🌟 Features
+## Features
 
-- **🤖 FLAN-T5 Language Model**: Uses Google's FLAN-T5-Small for natural language understanding and generation
-- **📄 Document Processing**: Automatically processes PDF, TXT, and DOCX files
-- **🔍 Smart Retrieval**: Uses semantic search to find relevant content from your documents
-- **💾 Offline Capability**: Works completely offline after initial setup
-- **⚡ Fast Performance**: Embeddings are cached for instant loading on subsequent runs
-- **🎯 Context-Aware Answers**: Provides answers with source citations and relevance scores
-- **💬 Chat Interface**: Clean, intuitive Streamlit interface for natural conversations
+- ** FLAN-T5 Language Model**: Uses Google's FLAN-T5-Small for natural language understanding and generation
+- ** Document Processing**: Automatically processes PDF, TXT, and DOCX files
+- ** Smart Retrieval**: Uses semantic search to find relevant content from your documents
+- ** Offline Capability**: Works completely offline after initial setup
+- ** Fast Performance**: Embeddings are cached for instant loading on subsequent runs
+- ** Context-Aware Answers**: Provides answers with source citations and relevance scores
+- ** Chat Interface**: Clean, intuitive Streamlit interface for natural conversations
 
-## 🎯 What is RAG?
+## What is RAG?
 
 **Retrieval-Augmented Generation (RAG)** is an AI technique that combines:
 1. **Retrieval**: Finding relevant information from your documents
@@ -20,13 +20,13 @@ An intelligent question-answering system powered by Google's FLAN-T5 language mo
 
 This means the AI answers questions based on YOUR documents, not generic knowledge.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - 500MB free disk space (for models)
 - Internet connection (only for first-time setup)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Installation
 
@@ -65,16 +65,16 @@ streamlit run app.py
 ```
 
 The app will:
-- ✅ Download models on first run (~400MB total)
-- ✅ Automatically detect and process your documents
-- ✅ Create embeddings and save them for future use
-- ✅ Launch in your browser
+- Download models on first run (~400MB total)
+- Automatically detect and process your documents
+- Create embeddings and save them for future use
+- Launch in your browser
 
 ### 4. Start Asking Questions!
 
 Simply type your questions in the chat interface and get answers based on your documents.
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Example Questions:
 
@@ -98,32 +98,32 @@ Simply type your questions in the chat interface and get answers based on your d
 - "What is the termination clause?"
 - "Who are the parties in this agreement?"
 
-## 🎛️ Interface Guide
+## Interface Guide
 
 ### Sidebar Controls
 
-**📄 Document Management**
+**Document Management**
 - View files detected in the `documents/` folder
 - See processing status
 - Reprocess documents when you add new files
 - Clear processed data if needed
 
-**🔧 RAG Settings**
+**RAG Settings**
 - **Retrieved Chunks**: Adjust how many relevant sections to use (1-5)
   - Lower = Faster, more focused answers
   - Higher = More context, comprehensive answers
 
-**🗑️ Conversation**
+**Conversation**
 - Clear conversation history anytime
 
 ### Main Interface
 
 - **Chat Area**: Displays conversation history
 - **Input Box**: Type your questions here
-- **📑 View Sources**: Click to see which document sections were used for each answer
+- **View Sources**: Click to see which document sections were used for each answer
 - **Status Bar**: Shows system status and number of processed chunks
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 your_project/
@@ -140,7 +140,7 @@ your_project/
 │   └── embeddings.pkl
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Models Used
 
@@ -166,7 +166,7 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"    # Keep this for best performance
 - `google/flan-t5-base` - 1GB, better quality
 - `google/flan-t5-large` - 3GB, best quality (requires more RAM)
 
-## ⚡ Performance Tips
+## Performance Tips
 
 1. **First Run**: Takes 2-5 minutes to download models and process documents
 2. **Subsequent Runs**: Loads in 10-15 seconds (embeddings are cached)
@@ -174,14 +174,14 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"    # Keep this for best performance
 4. **Chunk Size**: Default 500 words works well for most documents
 5. **Retrieved Chunks**: Start with 3, increase if answers lack context
 
-## 🌐 Offline Usage
+## Offline Usage
 
 After the first successful run with internet:
 
-1. ✅ All models are saved locally
-2. ✅ Embeddings are cached
-3. ✅ **No internet required**
-4. ✅ Works completely offline
+1. All models are saved locally
+2. Embeddings are cached
+3. **No internet required**
+4. Works completely offline
 
 Perfect for:
 - Secure environments
@@ -189,7 +189,7 @@ Perfect for:
 - Working without internet
 - Privacy-sensitive documents
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "SentencePiece not found"
 ```bash
@@ -223,7 +223,7 @@ pip install python-docx
 - Use fewer/smaller documents
 - Ensure models are saved locally (check `saved_models/` folder)
 
-## 📊 Technical Details
+## Technical Details
 
 ### How It Works
 
@@ -253,15 +253,15 @@ pip install python-docx
 - **python-docx**: DOCX text extraction
 - **NumPy**: Numerical computations
 
-## 🔒 Privacy & Security
+## Privacy & Security
 
-- ✅ **100% Local**: All processing happens on your machine
-- ✅ **No Cloud**: Documents never leave your computer
-- ✅ **No API Calls**: No external services used
-- ✅ **Offline Capable**: Works without internet
-- ✅ **Your Data**: Complete control over your documents
+- **100% Local**: All processing happens on your machine
+- **No Cloud**: Documents never leave your computer
+- **No API Calls**: No external services used
+- **Offline Capable**: Works without internet
+- **Your Data**: Complete control over your documents
 
-## 📝 Requirements
+## Requirements
 
 See `requirements.txt` for full list. Main dependencies:
 
@@ -272,7 +272,7 @@ See `requirements.txt` for full list. Main dependencies:
 - PyPDF2 >= 3.0.0
 - python-docx >= 0.8.11
 
-## 🤝 Contributing
+## Contributing
 
 Suggestions and improvements are welcome! This is a local AI assistant designed for:
 - Research
@@ -281,18 +281,18 @@ Suggestions and improvements are welcome! This is a local AI assistant designed 
 - Study assistance
 - Business intelligence
 
-## 📄 License
+## License
 
 This project is provided as-is for educational and personal use.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Google**: FLAN-T5 model
 - **Sentence-Transformers**: Embedding models
 - **Streamlit**: Amazing UI framework
 - **Hugging Face**: Model hosting and Transformers library
 
-## 📞 Support
+## Support
 
 If you encounter issues:
 
@@ -301,7 +301,7 @@ If you encounter issues:
 3. Verify your Python version (3.8+)
 4. Check that documents are in the correct folder
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 Potential improvements:
 - [ ] Support for more document formats (EPUB, HTML)
